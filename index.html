@@ -2,18 +2,19 @@
 <html>
 <head>
 <script src="//code.jquery.com/jquery.min.js"></script>
+  
+<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <title>Yelp</title>
 </head>
 <body>
+  <center>
   <h1> Welcome to Yelp API</h1>
-  <br />
-  <input id="photosearch" type="photo" placeholder="Type Search">
+  <input id="terms" type="text" placeholder="Type Search">
+    <input id="location" type="text" placeholder="Type Search">
   <button id="searchbutton">Search</button>
-
-  <div id="imageContainer">
-
-  </div>
+    <div id="results"></div>
 </body>
 </html>
