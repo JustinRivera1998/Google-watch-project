@@ -9,6 +9,9 @@ $("#searchbutton").click(function(){
   terms = $("#terms").val().replace(/\s/g, '+');
   searchYelp(terms,location);
 });
+$("#clear").click(function (){
+  $("#clear").empty();
+});
 
 function apiUrl(data){
   var request ="http://api.yelp.com";
